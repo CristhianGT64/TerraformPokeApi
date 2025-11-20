@@ -9,7 +9,7 @@ resource "azurerm_storage_account" "saccount" {
 }
 
 resource "azurerm_storage_account" "saccount2" {
-    name                     = "safuncsettings${ var.environment }"
+    name                     = "safunc${ var.project }"
     resource_group_name      = azurerm_resource_group.rg.name
     location                 = var.location
     account_tier             = "Standard"
